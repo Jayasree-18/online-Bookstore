@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="../../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<style type="text/css">
+		td{
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body class="container-fluid card" style="width: 30rem;">
+	<form action="add" method="post">
+		<h2 class="bg-danger text-white text-center">Book Registration</h2>
+		<table class="table">
+			<tr>
+				<td>Book Code</td>
+				<td><input type="text" name="code" class="form-control"></td>
+			</tr>
+			<tr>
+				<td>Book Name</td>
+				<td><input type="text" name="name" class="form-control"></td>
+			</tr>
+			<tr>
+				<td>Book Author</td>
+				<td><input type="text" name="author" class="form-control"></td>
+			</tr>
+			<tr>
+				<td>Book Price</td>
+				<td><input type="text" name="price" class="form-control"></td>
+			</tr>
+			<tr>
+				<td>Book Quantity</td>
+				<td><input type="text" name="qty" class="form-control"></td>
+			</tr>
+			<tr>
+				<td><button class="btn btn-primary">AddBookDetails</button></td>
+				<td><button class="btn btn-primary">Reset</button></td>
+			</tr>
+		</table>
+		
+		
+	</form>
+</body>
+
+</html>

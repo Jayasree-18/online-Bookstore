@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="../../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<style type="text/css">
+		input+div {
+			display: none;
+		}
+
+		input:focus+div {
+			display: block;
+			color: red;
+			font-weight: normal;
+		}
+		td{
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body class="container-fluid card" style="width: 30rem;">
+	<form action="creg" method="post">
+		<h2 class="bg-danger text-white text-center">Customer Registration</h2>
+		<table class="table">
+			<tr>
+				<td>User Name</td>
+				<td>
+					<input type="text" name="uname" class="form-control">
+					<div>User Name Required</div>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Password</td>
+				<td>
+					<input type="password" name="pword" class="form-control">
+					<div>Password 4 to 5 chars atleast one uppercase letter</div>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>First Name</td>
+				<td>
+					<input type="text" name="fname" class="form-control">
+					<div>First Name Required</div>
+				</td>
+			</tr>
+			<tr>
+				<td>Last Name</td>
+				<td>
+					<input type="text" name="lname" class="form-control">
+					<div>Last Name Required</div>
+				</td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td>
+					<input type="text" name="addr" class="form-control">
+					<div>Address Required</div>
+				</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>
+					<input type="email" name="mid" placeholder="Your email address" class="form-control">
+					<div>Email Required</div>
+				</td>
+			</tr>		
+			<tr>
+				<td>Phone Number</td>
+				<td>
+					<input type="text" name="phno" class="form-control">
+					<div>Phone no Required</div>
+				</td>
+			</tr>
+		</table>
+		<button class="btn btn-primary">Register</button>
+		Already have an Account?<a href="CustomerLogin.html">Sign in</a>
+	</form>
+</body>
+
+</html>
